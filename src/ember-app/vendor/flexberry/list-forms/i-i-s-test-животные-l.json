@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-test-животные-e",
+  "editForm": "i-i-s-test-животные-e",
+  "external": false,
+  "caption": "Животные",
+  "name": "IISTestЖивотныеL",
+  "className": "ЖивотныеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-животные",
+      "modelProjection": "ЖивотныеL"
+    }
+  ]
+}

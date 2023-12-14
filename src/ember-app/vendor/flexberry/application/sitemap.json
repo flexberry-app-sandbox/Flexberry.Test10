@@ -1,0 +1,64 @@
+﻿{
+  "applicationCaption": "Test",
+  "applicationTitle": "Test",
+  "items": [
+    {
+      "link": null,
+      "menuName": "test",
+      "caption": "Test",
+      "title": "Test",
+      "children": [
+        {
+          "link": "i-i-s-test-животные-l",
+          "menuName": null,
+          "caption": "Животные",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test-корма-l",
+          "menuName": null,
+          "caption": "Корма",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test-расписание-корм-l",
+          "menuName": null,
+          "caption": "Расписание корм",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test-вид-l",
+          "menuName": null,
+          "caption": "Вид",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test-клетки-l",
+          "menuName": null,
+          "caption": "Клетки",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

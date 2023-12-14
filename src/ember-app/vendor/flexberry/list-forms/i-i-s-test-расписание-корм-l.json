@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-test-расписание-корм-e",
+  "editForm": "i-i-s-test-расписание-корм-e",
+  "external": false,
+  "caption": "Расписание корм",
+  "name": "IISTestРасписаниеКормL",
+  "className": "РасписаниеКормL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-расписание-корм",
+      "modelProjection": "РасписаниеКормL"
+    }
+  ]
+}

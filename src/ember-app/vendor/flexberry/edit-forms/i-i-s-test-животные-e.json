@@ -1,0 +1,47 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    },
+    {
+      "master": "корма",
+      "displayAttributeName": "типКорма",
+      "required": true,
+      "relationName": "Сведения.Корма",
+      "projection": "КормаL",
+      "detailModelName": "i-i-s-test-сведения"
+    },
+    {
+      "master": "вид",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "Сведения.Вид",
+      "projection": "ВидL",
+      "detailModelName": "i-i-s-test-сведения"
+    },
+    {
+      "master": "клетки",
+      "displayAttributeName": "типКлетки",
+      "required": true,
+      "relationName": "Сведения.Клетки",
+      "projection": "КлеткиL",
+      "detailModelName": "i-i-s-test-сведения"
+    }
+  ],
+  "external": false,
+  "caption": "Животные",
+  "name": "IISTestЖивотныеE",
+  "className": "ЖивотныеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-животные",
+      "modelProjection": "ЖивотныеE"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Вид",
+  "name": "IISTestВидE",
+  "className": "ВидE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-вид",
+      "modelProjection": "ВидE"
+    }
+  ]
+}

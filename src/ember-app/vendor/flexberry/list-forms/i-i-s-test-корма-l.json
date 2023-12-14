@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-test-корма-e",
+  "editForm": "i-i-s-test-корма-e",
+  "external": false,
+  "caption": "Корма",
+  "name": "IISTestКормаL",
+  "className": "КормаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-корма",
+      "modelProjection": "КормаL"
+    }
+  ]
+}

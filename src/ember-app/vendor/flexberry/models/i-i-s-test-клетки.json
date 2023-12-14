@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISTestКлетки",
+  "modelName": "i-i-s-test-клетки",
+  "className": "Клетки",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерКлетки",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "площатьКлетки",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "типКлетки",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлеткиE",
+      "modelName": "i-i-s-test-клетки",
+      "attrs": [
+        {
+          "name": "номерКлетки",
+          "caption": "Номер клетки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типКлетки",
+          "caption": "Тип клетки",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "площатьКлетки",
+          "caption": "Площать клетки",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КлеткиL",
+      "modelName": "i-i-s-test-клетки",
+      "attrs": [
+        {
+          "name": "номерКлетки",
+          "caption": "Номер клетки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типКлетки",
+          "caption": "Тип клетки",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "площатьКлетки",
+          "caption": "Площать клетки",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

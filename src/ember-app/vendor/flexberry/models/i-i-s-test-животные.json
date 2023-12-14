@@ -1,0 +1,141 @@
+﻿{
+  "name": "IISTestЖивотные",
+  "modelName": "i-i-s-test-животные",
+  "className": "Животные",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодВида",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерЖивотного",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-test-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "сведения",
+      "relatedTo": "i-i-s-test-сведения",
+      "inverse": "животные"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЖивотныеE",
+      "modelName": "i-i-s-test-животные",
+      "attrs": [
+        {
+          "name": "кодВида",
+          "caption": "Код вида",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерЖивотного",
+          "caption": "Номер животного",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Отчество",
+          "lookupValueField": "отчество",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "табличНомер",
+              "caption": "Табличный номер",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-test-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "СведенияE",
+          "caption": "Сведения",
+          "name": "сведения",
+          "relatedTo": "i-i-s-test-сведения",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЖивотныеL",
+      "modelName": "i-i-s-test-животные",
+      "attrs": [
+        {
+          "name": "кодВида",
+          "caption": "Код вида",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерЖивотного",
+          "caption": "Номер животного",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "отчество",
+              "caption": "Отчество",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Отчество",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-test-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

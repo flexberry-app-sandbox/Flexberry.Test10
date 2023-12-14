@@ -1,0 +1,128 @@
+﻿{
+  "name": "IISTestРасписаниеКорм",
+  "modelName": "i-i-s-test-расписание-корм",
+  "className": "РасписаниеКорм",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "время",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "животные",
+      "relatedTo": "i-i-s-test-животные",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РасписаниеКормE",
+      "modelName": "i-i-s-test-расписание-корм",
+      "attrs": [
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "КодВида",
+          "lookupValueField": "кодВида",
+          "relationName": "Животные",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Животные.Сотрудники",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "табличНомер",
+                  "caption": "Табельный номер",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сотрудники",
+              "relatedTo": "i-i-s-test-сотрудники",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "кодВида",
+              "caption": "Код вида",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Животные",
+          "name": "животные",
+          "relatedTo": "i-i-s-test-животные",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "РасписаниеКормL",
+      "modelName": "i-i-s-test-расписание-корм",
+      "attrs": [
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Животные",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "кодВида",
+              "caption": "Код вида",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Код вида",
+          "name": "животные",
+          "relatedTo": "i-i-s-test-животные",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

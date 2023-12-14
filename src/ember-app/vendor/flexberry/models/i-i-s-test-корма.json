@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISTestКорма",
+  "modelName": "i-i-s-test-корма",
+  "className": "Корма",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерЖивотного",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "типКорма",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КормаE",
+      "modelName": "i-i-s-test-корма",
+      "attrs": [
+        {
+          "name": "типКорма",
+          "caption": "Тип корма",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерЖивотного",
+          "caption": "Номер животного",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КормаL",
+      "modelName": "i-i-s-test-корма",
+      "attrs": [
+        {
+          "name": "типКорма",
+          "caption": "Тип корма",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерЖивотного",
+          "caption": "Номер животного",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

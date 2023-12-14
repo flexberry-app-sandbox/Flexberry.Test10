@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-test-вид-e",
+  "editForm": "i-i-s-test-вид-e",
+  "external": false,
+  "caption": "Вид",
+  "name": "IISTestВидL",
+  "className": "ВидL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-вид",
+      "modelProjection": "ВидL"
+    }
+  ]
+}

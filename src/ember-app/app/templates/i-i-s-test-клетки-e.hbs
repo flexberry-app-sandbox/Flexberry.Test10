@@ -1,0 +1,57 @@
+<h3 class="ui header">{{t "forms.i-i-s-test-клетки-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерКлетки
+      class=(if (v-get validationModel "номерКлетки" "isInvalid") "error")
+      label=(t "forms.i-i-s-test-клетки-e.номерКлетки-caption")
+      data-test-i-i-s-test-клетки-e-номерКлетки=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерКлетки" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.типКлетки
+      class=(if (v-get validationModel "типКлетки" "isInvalid") "error")
+      label=(t "forms.i-i-s-test-клетки-e.типКлетки-caption")
+      data-test-i-i-s-test-клетки-e-типКлетки=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "типКлетки" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.площатьКлетки
+      class=(if (v-get validationModel "площатьКлетки" "isInvalid") "error")
+      label=(t "forms.i-i-s-test-клетки-e.площатьКлетки-caption")
+      data-test-i-i-s-test-клетки-e-площатьКлетки=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "площатьКлетки" "message")}}
+  </div>
+</form>

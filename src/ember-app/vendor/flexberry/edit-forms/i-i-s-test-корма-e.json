@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Корма",
+  "name": "IISTestКормаE",
+  "className": "КормаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-корма",
+      "modelProjection": "КормаE"
+    }
+  ]
+}
